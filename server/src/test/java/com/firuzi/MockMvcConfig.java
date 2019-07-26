@@ -1,4 +1,4 @@
-package com.bfwg;
+package com.firuzi;
 
 import io.restassured.RestAssured;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;

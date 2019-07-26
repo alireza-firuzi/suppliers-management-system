@@ -1,4 +1,4 @@
-package com.bfwg.security;
+package com.firuzi.security;
 
 
 import io.jsonwebtoken.ExpiredJwtException;

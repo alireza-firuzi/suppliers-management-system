@@ -1,4 +1,4 @@
-package com.bfwg;
+package com.firuzi;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.firuzi.Application;
@@ -67,7 +67,7 @@ public abstract class AbstractTest {
 
 		User user = new User();
 		Authority userAuthority = new Authority();
-		userAuthority.setName( UserRoleName.ROLE_USER );
+		userAuthority.setName( "ROLE_USER" );
 		List<Authority> userAuthorities = new ArrayList<>();
 		userAuthorities.add(userAuthority);
 		user.setUsername("user");
@@ -79,8 +79,8 @@ public abstract class AbstractTest {
     protected User buildTestAdmin() {
         Authority userAuthority = new Authority();
         Authority adminAuthority = new Authority();
-        userAuthority.setName( UserRoleName.ROLE_USER );
-        adminAuthority.setName( UserRoleName.ROLE_ADMIN );
+        userAuthority.setName( "ROLE_USER" );
+        adminAuthority.setName( "ROLE_ADMIN" );
         List<Authority> adminAuthorities = new ArrayList<>();
         adminAuthorities.add(userAuthority);
         adminAuthorities.add(adminAuthority);

@@ -1,9 +1,10 @@
-package com.bfwg.service;
+package com.firuzi.service;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;
-import com.bfwg.AbstractTest;
+
+import com.firuzi.AbstractTest;
 import com.firuzi.service.UserService;
 
 /**
