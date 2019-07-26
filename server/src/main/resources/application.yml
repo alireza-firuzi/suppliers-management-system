@@ -1,0 +1,23 @@
+app:
+  name: supplier-management-system
+
+jwt:
+  header: Authorization
+  expires_in: 600 # 10 minutes
+  secret: queenvictoria
+  cookie: AUTH-TOKEN
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.firuzi: DEBUG
+
+spring:
+    datasource:
+        password: 
+        url: jdbc:mysql://localhost:3306/supplier_management_system
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+    
