@@ -14,7 +14,7 @@ logging:
 
 spring:
     datasource:
-        password: 
+        password: test
         url: jdbc:mysql://localhost:3306/supplier_management_system
         username: root
     jpa:
