@@ -3,6 +3,7 @@ package com.firuzi.model;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,17 +15,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "USER")
-public class User implements UserDetails, Serializable {
+public class User extends Auditable<String> implements UserDetails, Serializable {
+	
   @Id
   @Column(name = "id")
   @GeneratedValue(strategy = GenerationType.IDENTITY)
